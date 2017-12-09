@@ -6,6 +6,6 @@ client.on('connect', () => {
      qos:1
  };
 var datetime=new Date();
-client.publish('test/data','data'+datetime,options)
+client.publish('test/data','data')
   
 })

@@ -14,6 +14,7 @@ client.on('message',function(topic,message){
     var sendDATA=message.toString();
 var http=require('http');
 var querystring = require('querystring');    
+//const postData=sendDATA;
 const postData=sendDATA;
     
 const options = {
@@ -45,6 +46,5 @@ req.on('error', (e) => {
 
 // write data to request body
 req.write(postData);
-req.end();
-    
+req.end();    
 });

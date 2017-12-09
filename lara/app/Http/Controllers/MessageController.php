@@ -11,9 +11,6 @@ class MessageController extends Controller
         
         //display the messages.
         $messages=Client_messages::paginate(5);
-        //$messages="hello!!";
-       // return $messages;
     return view('message',compact('messages'));
-   //  return "hello";
     }
 }
